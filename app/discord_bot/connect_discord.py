@@ -10,7 +10,7 @@ discord_token=os.getenv('DISCORD_TOKEN')
 class MyClient(discord.Client):
     async def on_ready(self):
         logging.info('WE MADE IT')
-        logging.info('Logged in as: ', self.user)
+        #logging.info('Logged in as: ', self.user)
         logging.info('WE MADE IT AFTER')
         
     async def on_message(self, message):
