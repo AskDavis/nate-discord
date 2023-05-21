@@ -26,7 +26,7 @@ async def chatgpt_response(prompt):
     DIALOGUE_STACK = DIALOGUE_STACK[-6:]
     messages = SYSTEM_DIRECTIVES + DIALOGUE_STACK
 
-    if "mabel" in prompt.lower():
+    if "nate" in prompt.lower():
         logger.info("PROMPT: " + prompt.lower())
         try:
             response = openai.ChatCompletion.create(
