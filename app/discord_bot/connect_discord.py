@@ -18,7 +18,7 @@ class MyClient(discord.Client):
         logging.info('Message from {0.author}: {0.content}'.format(message))
         if message.author == client.user:
             return
-        if "mabel" in message.content.lower():
+        if "nate" in message.content.lower():
             try:
                 response = await chatgpt_response(message.content)
             except Exception as e:
