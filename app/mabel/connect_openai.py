@@ -30,7 +30,7 @@ async def chatgpt_response(prompt):
         logger.info("PROMPT: " + prompt.lower())
         try:
             response = openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-3.5-turbo-0301",
             messages=messages,
             max_tokens=1800,
             )
