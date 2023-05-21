@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO)
 discord_token=os.getenv('DISCORD_TOKEN')
 class MyClient(discord.Client):
     async def on_ready(self):
-        logging.info('Logged in as: ', self.user)
+        logging.info('Logged in as: ', self.name)
     async def on_message(self, message):
         logging.info('Message from {0.author}: {0.content}'.format(message))
         if message.author == client.user:
