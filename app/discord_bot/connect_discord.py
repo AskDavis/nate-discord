@@ -14,6 +14,7 @@ class MyClient(discord.Client):
         logging.info('WE MADE IT AFTER')
         
     async def on_message(self, message):
+        logging.info(str(message))
         logging.info('Message from {0.author}: {0.content}'.format(message))
         if message.author == client.user:
             return
